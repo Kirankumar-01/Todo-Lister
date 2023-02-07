@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+    margin: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ body{
+    background-color: rgb(107, 21, 206);
+    color: #fff;
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(144, 37, 177);
+    box-shadow: 1px 1px 60px 12px black;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading{
+    text-align: center;
+    
 }
+ .App {
+    text-align: center;
+ }
+ .taskBg{
+    background:linear-gradient(160deg, rgb(149, 73, 236), violet);
+    border-radius: 6px;
+    margin-bottom: 5%;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+    height: 100%;
+ }
+ .taskBg div{
+    display: flex;
+    align-items: center;
+ }
+ .taskNumber{
+    color: rgb(0, 245, 61);
+    border: 1px solid rgb(48, 255, 29);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+ }
+ .iconsWrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: auto;
+    display: inline-block;
+ }
+ .taskBg .iconsWrap span{
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    color: chartreuse;
+ }
+ .taskBg .iconsWrap span:hover{
+    color: turquoise;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+ .btn{
+    background-color: slateblue;
+    color: aliceblue;
+    border: none;
+ }
+ .btn:hover{
+    background:linear-gradient(160deg, rgb(149, 73, 236), violet)
+ }
